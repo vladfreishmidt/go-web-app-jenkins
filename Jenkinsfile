@@ -11,7 +11,6 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        git 'https://github.com/vladfreishmidt/go-web-app-jenkins.git'
         sh 'go test ./...'
       }
     }
